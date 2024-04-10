@@ -1,0 +1,63 @@
+
+
+#  * is used as a wildcard match
+#  / is used to ignore pathnames relative to the .gitignore file
+#  # is used to add comments to a .gitignore file
+
+# What Should Be Ignored
+###########################
+# 	- Ignore Only bin-folder which only taken more space: compiled version, rest .setting, .project, .classpath -> no need to ignore
+#	- Refer: https://www.w3schools.com/git/git_ignore.asp?remote=github
+
+
+#ignore STS Workspace MetaData: very large file: must ignore
+.metadata
+
+
+
+#ignore bin, target  => folder found anywhere
+**/bin/
+**/target/
+
+
+ 
+
+
+
+#Other Details Taken From The Other Repo:
+#=============================================
+#  HELP.md
+#  target/
+#  !.mvn/wrapper/maven-wrapper.jar
+#  !**/src/main/**/target/
+#  !**/src/test/**/target/
+# 
+# 
+# # ### STS ###
+#  .apt_generated
+#  .classpath
+#  .factorypath
+#  .project
+#  .settings
+#  .springBeans
+#  .sts4-cache
+
+
+# ### IntelliJ IDEA ###
+# .idea
+# *.iws
+# *.iml
+# *.ipr
+# 
+# ### NetBeans ###
+# /nbproject/private/
+# /nbbuild/
+# /dist/
+# /nbdist/
+# /.nb-gradle/
+# build/
+# !**/src/main/**/build/
+# !**/src/test/**/build/
+# 
+# ### VS Code ###
+# .vscode/

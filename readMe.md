@@ -30,15 +30,15 @@ curl -X 'GET' \
  {
   "accHolderName": "<Any Account Holder Name>"
 }
-
+>> A new account will be created and you will get account id in the response.
 
 ## API : Get Details of the Account Created by Account ID
 
 GET http://localhost:8080/api/v1/account/{{AccountID}}
-
+.....
 
 ## API : To update account balance: to withdraw and deposit ammount:
-POST http://localhost:8080/api/v1/account/update/1002
+POST http://localhost:8080/api/v1/account/update/{{AccountID}}
 
 ResquestBody:
 {

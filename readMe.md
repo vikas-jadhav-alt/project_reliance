@@ -10,6 +10,8 @@ This is a account management service providing you various features like
 - MySQL 8
 - Java 8
 
+>> Make sure you have db with below name in mysql:
+>> >> 'project-rel-db1'
 
 
 # API Testing
